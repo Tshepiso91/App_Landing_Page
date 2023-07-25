@@ -1,0 +1,111 @@
+.jumbotron{
+  background: url('https://freenaturestock.com/wp-content/uploads/freenaturestock-1123-1024x1536.jpeg') ;
+  background-size:100% 100%; /* Adjust to the 100% vertically and horizontally to the jumbotron */
+  height: 390px;
+}
+
+/* setting size of the logo */
+.logo{
+  width:75px;
+  height:75px;
+  position: relative;
+  top:15px;
+}
+
+/* featured */
+
+.featured{
+  color:#ffffff;
+}
+
+/* create space between title and logo */
+.featured h1{
+  padding-top:30px;
+}
+
+/* styling links */
+.featured .btn-default{
+  font-weight: bold;
+  font-size: 20px;
+  color:white;
+  background-color:rgba(145,82,58,0.5);
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-top: 20px;
+  width:160px;
+}
+
+.featured .btn-default:hover{
+  background-color:rgba(145,82,58);
+}
+
+/* center align elements in the trial section and add padding */
+.trial{
+  text-align: center;
+  margin-top:100px;
+  padding: 20px 0 40px 0;
+  color:black;
+}
+
+
+/* resizing the pictures */
+
+.trial img{
+  width:150px;
+  margin: 20px;
+}
+
+/* Footer */
+.footer{
+  background-color: #eee;
+  font-size: 18px;
+  padding:10px 10px;
+}
+
+/* Adding styling for devices between 480px and 768px */
+@media(min-width:480px) and (max-width:768px){
+  .jumbotron{
+    height: 410px;
+    margin:0;
+  }
+  .logo{
+  width:50px;
+  height: 50px;
+  }
+  .featured h1{
+    padding-top: 30px;
+  }
+  .featured p{
+    font-size: 17px;
+  }
+  .featured{
+    text-align: center;
+  }
+}
+
+/* Adding styling for devices under 480px */
+@media (max-width:480px){
+  .jumbotron{
+    height: 410px;
+    margin:0;
+  }
+  .logo{
+  width:40px;
+  height: 40px;
+  }
+  .featured h1{
+    padding-top: 10px;
+  }
+  .featured p, .featured a{
+    font-size: 13px;
+  }
+  .featured{
+    text-align: center;
+  }
+
+.trial img{
+  width:10px;
+  height:35px;
+  margin:10px;
+}
+}
